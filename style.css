@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+body::-webkit-scrollbar{
+    /* display: none; */
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: auto;
+   
+}
+
+.content-last{
+   
+    color: rgba(159, 159, 159, 0.979);
+    font-weight: 100;
+    font-size: 0.25rem;
+}
+.hr{
+    margin: 0px;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+ul li{
+    padding-left: 1rem;
+}
+.main-nav{
+    height: 40px;
+}
+
+
+.card-left{
+     position: absolute;
+     z-index: 2000;
+     top: 0px;
+     left: -5px;
+     background-color:white;
+     display: flex;
+     width: 100%; 
+
+
+}
+.card-left img{
+    width: 1rem;
+}
+
+#itemOne,#itemTwo,#itemThree{
+    display: none;
+    background-color: rgb(223, 223, 223);
+   
+   
+}
+
+.child{
+    background-color: rgb(223, 223, 223);
+}
+picture{
+    max-width: 100%;
+}
+.myROW{
+   
+   
+   
+   
+
+}
+.row1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+.card-content img{
+    width: 10px;
+}
+.card-content{
+    margin-top: 10px;
+}
+.card-content span{
+    font-weight: 900;
+}
+.card-own{
+    background-image: url(images/card2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.card-two{
+    background-image: url(images/card3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.card-three{
+    background-image: url(images/card4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.card-one{
+    background-image: url(images/card4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.sidebar-items{
+    z-index: 20001;
+}
+.sidebar{
+    
+    position: absolute;
+    z-index: 2000;
+}
+
+
+.sidebar-item{
+    background-color: white;
+    }
+    .searchBar input{
+        border: none;
+        background-color:#f0f2f2;
+        min-width: 200px;
+    }
+    .searchBar input:focus{
+        border: none;
+        outline: none;
+        
+        
+    }
+    .search-hide{
+        display: none;
+    }
+    
+    
+
+.searchBar{
+    margin-top: 10px;
+    position: absolute;
+    z-index: 20001;
+    
+    left: 20%;
+    border: 2px solid #0098c2;
+    border-radius: 7px;
+    background-color:#f0f2f2;
+    min-width: 240px;
+}
+.button-Blue{
+    color: white;
+    background-color: #0081a4;
+    border-radius: 7px;
+
+}
+.button-Blue h4{
+    padding-top: 10px;
+    text-align: center;
+}
+.buttton-Border{
+    width: 90%;
+    border: 2px solid #0081a4 ;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+.buttton-Border h4{
+    padding-top: 10px;
+    text-align: center;
+}
+hr {  margin-left: 0;
+    margin-right: 0; }
+.buttton-Border~span{
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+/* carosell */
+.carousel-one{
+    overflow: hidden;
+    width: 100%;
+    
+    position: relative;
+}
+.carousel-one .carousel-item-sp,.carousel-one .carousel-item--hidden{
+    display: none;
+}
+.card-one .carousel-item-sp img{
+    width: 100%;
+    overflow: hidden;
+    transform: translateX(-50%);
+    
+   
+
+}
+
+.carousel-item-jm{
+    object-fit: scale-down;
+    
+
+}
+.card-one.carousel-item-sp{
+    object-fit: none;
+    object-position: left;
+}
+.carousel-one .carousel-item--visible{
+    display: block;
+    width: 100vw;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.colorline{
+    
+    width: 20%;
+    margin: 7px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #464646;
+    transition: color 2s ;
+
+    
+}
+.bcolor{
+    background-color: #0098c2;
+}
+.bcolor2{
+    
+}
+#crsl{
+   
+}
+
+@keyframes fade {
+    from {opacity: 1;
+    transform: translatex(-100%);}
+  to {opacity: 1;
+transform: translatex(0%);}
+}
+
+@media screen and (max-width:731px){
+    .page-one img{
+       height: 500px;
+       
+    }
+    
+    .row1{}
+}
+@media screen and (max-width:431px){
+    .page-one img{
+       height: 500px;
+       
+    }
+    .card{
+        margin: 0px;
+    }
+}
